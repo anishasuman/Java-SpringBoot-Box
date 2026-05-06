@@ -1,19 +1,20 @@
-**IOC** means Inversion of Control and this is a priciple.
+#IOC means Inversion of Control and this is a priciple.
 It controll object creation instead of the programmer.
 OR
 Spring Framework manages **object creation** and **lifecycle**.
 client <-> controller , service , Repository <-> Database.
 
-**DI** Dependency Injection is actual implementation of IOC.
+#DI = Dependency Injection is actual implementation of IOC.
 This is a Design pattern.
-Four techniques to archieve DI:-
+`Four techniques to archieve DI:-
 1.Without DI
 2.Constructor Injection
 3.Field Injection
 4.Setter Injection
 
 
-**Important Annotations**
+#Important Annotations
+
 Annotation	Use
 @Component	Create bean/object
 @Autowired	Inject dependency
