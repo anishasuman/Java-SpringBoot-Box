@@ -1,0 +1,92 @@
+If we want to create few classes in a lot of classes that is given, then we need to talk with Spring with the help of Configuration. 
+Configuration helps Spring to understand which class object needs to be created and managed.
+
+Spring Boot is an opinionated framework. It gives certain default things and configurations that are used to run the application easily, 
+so developers do not need to write everything manually.
+
+Spring Boot follows the principle of **Convention Over Configuration**. It means if we follow the standard rules and structure, 
+then Spring Boot automatically configures many things for us and reduces manual configuration work.
+
+Spring Boot helps developers:
+
+Create applications faster
+Reduce boilerplate code
+Configure servers automatically
+Run applications easily with embedded servers like Tomcat
+
+Example:
+
+@SpringBootApplication
+public class Main {
+    public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
+    }
+}
+
+
+
+To print helloworld with the help of framework....
+
+
+package com.example.BootProject;
+
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Basic {
+    @RequestMapping("/")
+    public static void main(String[] args){
+        System.out.println("Hello World , Lets Create");
+    }
+
+}
+
+in the BootProjectApplication
+
+package com.example.BootProject;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BootProjectApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BootProjectApplication.class, args);
+	}
+
+}
+
+output 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.6)
+
+2026-05-07T19:45:51.591+05:30  INFO 25628 --- [BootProject] [           main] c.e.BootProject.BootProjectApplication   : Starting BootProjectApplication using Java 24.0.1 with PID 25628 (C:\Users\Anisha\Downloads\BootProject\BootProject\target\classes started by Anisha in C:\Users\Anisha\Downloads\BootProject\BootProject)
+2026-05-07T19:45:51.595+05:30  INFO 25628 --- [BootProject] [           main] c.e.BootProject.BootProjectApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-07T19:45:52.578+05:30  INFO 25628 --- [BootProject] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-07T19:45:52.601+05:30  INFO 25628 --- [BootProject] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-07T19:45:52.602+05:30  INFO 25628 --- [BootProject] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-07T19:45:52.712+05:30  INFO 25628 --- [BootProject] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1052 ms
+2026-05-07T19:45:54.226+05:30  INFO 25628 --- [BootProject] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-07T19:45:54.243+05:30  INFO 25628 --- [BootProject] [           main] c.e.BootProject.BootProjectApplication   : Started BootProjectApplication in 3.215 seconds (process running for 4.369)
+2026-05-07T19:48:34.315+05:30  INFO 25628 --- [BootProject] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-07T19:48:34.318+05:30  INFO 25628 --- [BootProject] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-07T19:48:34.326+05:30  INFO 25628 --- [BootProject] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+Hello World , Lets Create
+Hello World , Lets Create
+
+
+
+important to notice
+Tomcat started on port 8080 (http) with context path '/'
+
+
+
